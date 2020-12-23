@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Preserve Enable TestSuite">
+	<test name="Test1" preserve-order="false">	<!-- The attribute "preserve-order" is used to define that either the content 
+																will run the given order or with usual order of running. -->
+		<classes>
+			<class name="testClasses.TestNG_Preserve2"></class>
+			<class name="testClasses.TestNG_Preserve1"></class>
+		</classes>
+	</test>
+	<test name="Test2" enabled="false">			<!-- The attribute "enabled" is used to enable or disable the test tag. -->
+		<classes>
+			<class name="testClasses.TestNG_Preserve2"></class>
+			<class name="testClasses.TestNG_Preserve1"></class>
+		</classes>
+	</test>
+</suite>

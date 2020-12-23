@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallet TestSuite" parallel="tests" thread-count="2">		<!-- The attribute "parallel" allows us to run our test, methods and classes 
+																				in parallel to each other, depending on the value we provide. -->
+	<test name="Test 1">
+		<classes>
+			<class name="testClasses.TestNG_TestParallet1"></class>
+		</classes>
+	</test>
+	<test name="Test 2">
+		<classes>
+			<class name="testClasses.TestNG_TestParallet2"></class>
+		</classes>
+	</test>
+</suite>
